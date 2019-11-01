@@ -1,0 +1,124 @@
+1 . Excute command "pwd" , to retrive working directory location(path)
+2 . Excute command "sudo apt-get update" , to get all the package updates to be installed.
+
+     sudo -> command gives administrative access.
+           In  Linux Operating System, there are  3 types of users'
+		a. Regular User 
+                b. Administrator (root)
+                c. service , this user is exists only for Linux Server systems not for Desktop version
+
+3. Execute command "ls" and "ls -l" to get list of directories and files in that location
+       first command gives name of the files 
+       (in linux OS, every entity (dirctory - folders, files, devices) is consider as files only)
+       send command gives name of the files in column wise list
+
+4. Execute command "sudo mkdir 'foldername' " to create a folder
+          Exameple: ~$ sudo mkdir demofolder
+
+     When ever a folder is created its comes with read permission by defaut. To change permission first change user of the file with following command
+    
+         sudo chown group:user directory name (folder name)
+         Ex: sudo chown root:ebinezer demofolder
+   
+      Next change the permisssions with the following command
+
+        sudo chmod 775 foldername
+
+        Ex: sudo chmod 775 demofolder
+
+          Permission values:
+           
+         0 - No Permissions
+         1 - Execute
+         2 - Write
+         3 - Write+Execute
+         4 - Read
+         5 - Read + Write
+         6 - Read + Execute
+         7 - Read + Write + Execute
+
+
+5. Excute command "sudo mkdir -p parent/child" to create parent and child directories
+
+       Exampele : demofolder$ sudo -p images/personal-images
+6. Excute command "sudo mkdir -p parent/{child1, child2...}" , to create multiple sub directories 
+
+       Exameple: demofolder$ sudo -p images/{college, school}
+
+7. Excute command "touch filename" , to create a file
+       Example: touch myfile.txt
+
+
+8. Excute command "vi filename" , to open file in vim command line editor.
+
+      Example: vi myfile.txt
+
+      To work with vi editor , one should know the commands
+  
+      a. vi - editor is a multi mode application, normal mode, insert mode
+      b. The above command opens file in normal mode, where insert opertion won't work.
+      c. To change to insert mode , press 'i'.
+      d. Then it allows you to enter data. 
+		Node: In insert mode, cursor can't be navigated. It only allows to enter data. 
+      e. To Navigate cursor, change from insert mode to normal mode by pressing 'Esc' key.
+      d. And kindly follow below commands to perform other operations.
+         
+            i. To navigate cursor.
+			h - to move cursor to left direction
+	                j - to move cursor to downword direction
+                        k - to move cursor to upward direction
+                        l - to move cursor to right direction
+            ii. From above commands , we can move cursor by sigle character only. With below commands
+                we can move cursor by multiple characters
+ 
+                    nw - by n no of words in forward direction
+                    ne - by n no of words in backword direction
+                    ng - by n no of lines
+                    gg - to home of the page.
+                    shift+G - to end of the page.
+
+             iii. Some more commands are below to manuplate text
+                   
+                     x - to delete character above cursor point
+                     ndw - to delete n no of words
+                     ndd - to delete n no of lines
+                     yy - to copy current line.
+
+                     d - to cut and 'p' to past 
+
+
+             iv. Exist from vi editor.
+
+                  a. press escape to movie from inser mode to normal mode.
+                  b. press escape which results ':' at bottom of the file.
+                  c. press ':w' to save and but file will be still in display (not to close file only 			to save) 
+                  d. press ':wq' to save and close the editor.
+                  c. press ':q' , just close file  with out saving changes.
+
+
+9. Write 10 lines of text in above created file and do all copy , paste, delete operations.
+
+10. Execute command "mv oldfilename newfilename" to rename file.
+      
+       Ex: sudo mv demofile.txt mydemofile.txt
+
+11. Execute command "cp sourcefile destinationfile" to copy file.
+      Ex: sudo cp mydemofile.txt duplicate.txt
+  
+     Note: to copy the file from one directory to another directory , need to provide full path of the 	  directory.
+
+
+12. Execute command "rm filename" to delete file.
+ 
+      Ex: sudo rm mydemofile.txt
+
+13. Execute command "rm filename1 filename2 ...." to delete multiple files.
+
+14. Execute command "rm *" to remove all files in that directory.
+
+15. Execute command "rm -rvf *" to remove all files , directories from current directory.
+
+
+             
+
+            
