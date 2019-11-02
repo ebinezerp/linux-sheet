@@ -161,3 +161,29 @@
     "cat filename|grep content"
      
      Ex: cat demo.txt | grep apple
+
+31. To search for content which is not existing the provided word, execute command "cat filename| grep -v word"
+
+     Ex: cat demo.txt | grep -v apple
+
+32. To search for the content without case-senstivity, execute command 
+    "cat filename|grep -i content"
+
+
+     Ex: cat demo.txt|grep -i apple
+       which displays "apple" without case-sensitivity.
+
+33. To search for content along with line number, exectue command "cat     filename| grep -n content"
+
+     Ex: cat demo.txt| grep -n apple
+
+34. To display sorted content of the file on terminal, execute below     commands
+ 
+          "cat filename|sort "
+          "cat filename|sort -r"  - to display in descending sorted                                      order
+          "cat filename|sort -n" - to sort numerically 
+
+
+
+
+  
