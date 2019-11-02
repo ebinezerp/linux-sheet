@@ -186,4 +186,26 @@
 
 
 
-  
+ 35. Write a program to print non-prime odd numbers from 1 to 100 and debug the program
+ 
+    compile : gcc filename.c -o outputfilename
+
+          Ex: gcc non-prime.c -o non-prime
+
+    Run: ./non-prime
+
+    debug compilation:  gcc -g filename.c
+    to launch debug mode: gdb a.out
+
+        Now termial displays debug mode to enter break points
+
+       command to enter break points
+
+    	break linenumber
+    	Ex: break 10
+
+    Run:  to run enter "run" command
+
+     to continue with execution, enter "c" or "continue" 
+
+     to quit enter "ctrl+d"
