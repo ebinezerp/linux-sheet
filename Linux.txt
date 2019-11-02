@@ -119,6 +119,45 @@
 15. Execute command "rm -rvf *" to remove all files , directories from current directory.
 
 
-             
+16. Execute command "cat filename" to diplay file content on terminal.
+     Ex: cat demofile.txt
 
+17. Execute command "cat > filename" to write data into file from terminal.
+     Ex: cat > demofile.txt
+     This is my file content
+
+    Note: To exit from write mode. press Crtl+d
+
+     a. To check weather data is added or not, execute command "cat >         filename" 
+        Ex: cat demofile.txt  
+
+18. Above command overwrite data if any existed in the file, to append       to existing date, execute command "cat >> filename"
+   
+    Ex: cat >> demofile.txt
+    This is second line.
+
+     a. To check weather data is added or not, execute command "cat >        filename" 
+        Ex: cat demofile.txt 
             
+
+19. To search file in directory , execute command "find directory-path -name filename (filename-pattern)"
+
+      Ex: find /ebinezer/ -name "demo.txt"
+      Ex: find . -name "demo.txt"
+      Ex: find . -iname "demo.txt" 
+            The above command is to find file without case sensitivity.
+
+      Ex: find . -iname "demo.*"
+             The above command is to find file with name of any           extension.
+
+      Ex: find . -name "*.txt"
+            The above command is to find file of any name with 'txt'             extension.
+
+20. To display file on terminal with readable content on screen, execute     command "cat filename | less"
+    
+    Ex: cat demo.txt | less
+
+30. To search a content on file and display on terminal, Execute command 
+    "cat filename|grep content"
+     
+     Ex: cat demo.txt | grep apple
